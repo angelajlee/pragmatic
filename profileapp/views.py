@@ -19,7 +19,7 @@ class ProfileCreateView(CreateView):
 
     def form_valid(self, form):
         temp_profile = form.save(commit=False) # 임시 데이터 저장
-        temp_profile.user = self.request.user
+        temp_profile.user = self.request.user.user = self.request.user
         temp_profile.save()
         return super().form_valid(form)
 
