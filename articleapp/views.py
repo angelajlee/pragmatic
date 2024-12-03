@@ -1,4 +1,4 @@
-from msilib.schema import ListView
+from django.views.generic import ListView
 
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse, reverse_lazy

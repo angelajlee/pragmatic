@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.conf import settings
 from django.contrib import admin
-from django.template.context_processors import static
+from django.conf.urls.static import static
 from django.urls import path, include
 
 urlpatterns = [
