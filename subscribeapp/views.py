@@ -1,4 +1,4 @@
-from msilib.schema import ListView
+from django.views.generic import ListView
 
 from django.urls import reverse
 
