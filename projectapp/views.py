@@ -51,3 +51,6 @@ class ProjectListView(ListView):
     template_name = 'projectapp/list.html'
     paginate_by = 25
 
+    def get_queryset(self):
+        # Order by 'title' or another field from your model
+        return Project.objects.all().order_by('title')  # Or use 'created_at' or any other field
